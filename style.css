@@ -246,6 +246,29 @@ body {
   font-size: 18px;
   text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }
+.footer__main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: linear-gradient(to right, red 0%, orange 50%, #e93b45 70%);
+  width: 100%;
+}
+.logo__name {
+  color: white;
+  font-size: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+.footer__list ul li {
+  color: white;
+  font-size: 18px;
+  font-weight: 800;
+  list-style: none;
+  padding-bottom: 5px;
+}
 @media (min-width: 1024px) {
   .navbar {
     width: 100%;
@@ -351,7 +374,7 @@ body {
     justify-content: center;
     background-image: url(https://mamma-marketing.com/wp-content/uploads/2019/07/Restaurant-Interior.png);
     height: 300px;
-    width: 1050px;
+    width: 100%;
     background-size: cover;
     background-repeat: no-repeat;
 
@@ -368,5 +391,35 @@ body {
     -webkit-background-clip: text;
     font-size: 30px;
     text-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+  }
+  .footer {
+    background: linear-gradient(to right, red 0%, orange 50%, #e93b45 70%);
+    width: 100%;
+  }
+  .footer__main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .logo__name {
+    color: white;
+    font-size: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-weight: 700;
+    font-family: sans-serif;
+    text-align: left;
+    padding-left: 20%;
+  }
+
+  .footer__list ul li {
+    color: white;
+    font-size: 18px;
+    list-style: none;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    padding-right: 600px;
+    line-height: 1rem;
   }
 }
